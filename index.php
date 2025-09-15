@@ -1,7 +1,11 @@
-<?php require 'conexao.php'?>
+<?php
+session_start();
+require 'conexao.php';
+?>
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +18,7 @@
     <?php include('navbar.php'); ?>
     <!-- inclui o arquivo navbar no topo da pagina -->
     <div class="container mt-4">
-        <?php include('mensagem.php');?>
+        <?php include('mensagem.php'); ?>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
